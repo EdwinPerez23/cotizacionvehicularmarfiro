@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización Marfiro | Edwin Pérez</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="container-header">
+            <img src="img/Logo EP 1.png" class="imagen" alt="LogoEP">
+            <h1 class="titulo tituloprincipal">COTIZACIÓN SEGURO VEHÍCULAR</h1>
+            <img src="img/Marfiro.png" class="imagen" alt="LogoMarfiro">
+        </header>
+        
+        <section class="datos_entrada">
+            <!-- Valor comercial  -->
+            <div class="bloque_valor_comercial">
+                <div class="titulo">Valor comercial:</div>
+                <input class="input" id="valor_comercial">
+            </div>
+            <!-- Escoger tasa -->
+            <div class="bloque_tasa">
+                <div class="titulo">Tasa:</div>
+                <input list="porcentajes" class="input" id="tasa">
+            </div>
+            <!-- Boton cotizar -->
+            <div class="boton_cotizar">
+                <button id="botonCotizar" onclick="calcular()">COTIZAR</button>
+            </div>
+        </section>
+        
+        <section class="datos_salida">
+            <!-- Prima neta -->
+            <div class="bloque_prima_neta">
+                <div class="titulo">Prima Neta:</div>
+                <div id="resultadoPrimaNeta">-</div>
+            </div>
+            <!-- Prima total -->
+            <div class="bloque_prima_total">
+                <div class="titulo">SEGURO ANUAL:</div>
+                <div id="resultadoPrimaTotal">-</div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div>Realizado por Edwin Pérez</div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+ 
