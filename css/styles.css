@@ -176,6 +176,10 @@
 
 @media screen and (max-height:550px) 
 {
+    .datos_salida
+    {
+        gap: 12px;
+    }
     .datos_entrada, .datos_salida, #botonCotizar
     {
         font-size: 10px;
